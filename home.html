@@ -1,9 +1,21 @@
 <html>
 <head>
 <title>My Homepage</title>
+
+<script>
+function send(){
+ gtag("event", "觀看影片", {
+	"event_category": "首頁",
+	"event_label": "宣傳片",
+"value": 50
+});
+ alert("事件已送出");
+}
+</script>
 </head>
 <body>
-<h3>website for GA</h3>
-<div>Hello Google Analytics</div>
+ <h3>website for GA</h3>
+ <div>Hello Google Analytics</div>
+ <button onclick="send();">點我</button>
 </body>
 </html>
